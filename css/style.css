@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+body, div, p, h1, h2, h3, h4, ul, li, dl, dt, dd, ol, form, table, tr, td, span, 
+label, input, select, option, a, img, i, em, strong, b {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: 0 none;
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+    color: #fee201;
+}
+
+a:hover {
+	text-decoration: underline;
+    color: #fff;
+}
+
+.clearfix {
+*zoom: 1;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+html {
+    /*rem单位永远以html做参考缩放；百分比和em以父元素做参考*/
+    font-size: 625%; /*16*6.25=100px,或者写6.25rem*/
+}
+
+body {
+    font-family: "微软雅黑";
+    color: #666;
+    max-width: 640px; /*效果图的宽度*/
+    min-width: 320px;
+    margin: 0 auto;
+    font-size: 0.24rem; /*body中默认使用做多的字体大小*/
+    background: #f6f8f7;
+}
+	/*头部*/
+#header{width: 100%;}
+#header img{width: 100%;}
+.descrip{position:relative; width: 5.82rem;margin: 0.9rem 0 0 0.92rem;line-height: 0.34rem; color: #3d3f4e;font-size: 0.28rem;}
+.yellow{position: relative;}
+.yellow i{position: absolute; height: 0.2rem;background: #fdff04;width: 100%;z-index: -1;border-radius: 0.1rem;top: 0.05rem;}
+ .descrip-iconleft,.descrip-iconright{position: absolute; width: 0.22rem;height: 1.2rem;
+ background: url(../img/icon.png) no-repeat;background-size: 3.45rem 1.29rem;}
+.descrip-iconleft{ background-position: -0.14rem -0.02rem;left:-0.3rem;top: -0.09rem;}
+.descrip-iconright{ background-position: -0.5rem -0.04rem;left:5.6rem;top: -0.09rem;}
+/*产品描述*/
+.product{box-sizing: border-box;position:relative;width: 6.93rem;border: 0.02rem solid #3D3F4E;margin: 0.36rem 0 0 0.28rem;}
+.product h3{position: absolute;left: 0.36rem;margin-top: -0.41rem;top:50%; width: 0.94rem;height: 0.82rem;
+overflow: hidden;text-indent: -99em; background: url(../img/icon.png) no-repeat;background-size:3.45rem 1.29rem ;}
+.product dl{margin-left: 1.45rem;border-left: 0.02rem solid #3D3F4E;padding-left: 0.22rem;padding-top: 0.06rem;
+padding-bottom: 0.23rem;}
+.product dt{line-height: 0.6rem;color: #333;font-size: 0.28rem;font-weight:600;}
+.product dd{line-height: 0.3rem;}
+.product1{border-radius: 0.59rem;}
+.product1 h3{background-position: -0.72rem -0.24rem;}
+.product2{border-radius: 0.72rem;}
+.product2 h3{background-position: -1.57rem -0.23rem;}
+.product2 dd{width: 85%;}
+.product3{border-radius: 0.72rem;}
+.product3 h3{background-position: -2.43rem -0.25rem;}
+/*下部*/
+.middle{margin-top: 0.54rem;line-height: 0.7rem;text-align: center;font-size: 0.28rem;color: #3D3F4E;}
+.text{position:relative;width: 100%;height: 6.65rem;background: url(../img/use.jpg) no-repeat;background-size: 100% auto;
+margin-top: 0.09rem;}
+.text p{position: absolute;width: 5.78rem;line-height: 0.3rem;color: #333;}
+.use-text1{left: 0.80rem;}
+.use-text2{left: 0.80rem;bottom:-0.03rem;}
+.butten{display: block; background: url(../img/btn.jpg) no-repeat;width: 6.44rem;height: 1.20rem;
+margin: 0.89rem 0 0 0.48rem;background-size: 100% auto;box-sizing: border-box;padding-left: 0.28rem;}
+.butten span{line-height: 1.1rem;color: #fff;font-size: 0.32rem;}
+.last{width: 100%;margin-top: 0.62rem;}
+.last img{width: 100%;}
